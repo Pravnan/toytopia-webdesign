@@ -1,10 +1,11 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import styles from './page.module.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 
 export default function Home() {
   // State to manage the current slide
@@ -26,11 +27,18 @@ export default function Home() {
     setCurrentSlide((prevSlide) => (prevSlide === slides.length - 1 ? 0 : prevSlide + 1));
   };
 
+
+  useEffect(() => {
+    const slideInterval = setInterval(nextSlide, 3000); // Change slide every 3 seconds
+
+    return () => clearInterval(slideInterval); // Cleanup interval on component unmount
+  }, [currentSlide]);
+
   return (
     <div>
       <div className={styles.shoutoutBar}>
         <h1>Get Free Delivery on Purchases Over 3000 LKR</h1>
-        <Image src="/resources/icons/delivery.png" alt="Delivery Icon" width={50} height={50} />
+        <Image src="/resources/icons/delivery.png" alt="Delivery Icon" width={100} height={100} />
       </div>
 
       <nav className={styles.nav}>
@@ -50,9 +58,9 @@ export default function Home() {
               <Link href="#Contact">Contact Us</Link>
             </li>
             <li>
-              {/* <Link href="/Cart">
-                My Cart <FontAwesomeIcon icon="fa-solid fa-cart-shopping" />
-              </Link> */}
+              <Link href="/Cart">
+              My Cart <FontAwesomeIcon icon={faCartShopping} />
+              </Link>
             </li>
           </ul>
         </div>
@@ -76,6 +84,7 @@ export default function Home() {
           &#10095;
         </button>
       </div>
+      
     </div>
   );
 }
