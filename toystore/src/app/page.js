@@ -84,7 +84,7 @@ export default function Home() {
           &#10095;
         </button>
       </div>
-      
+
     </div>
   );
 }
