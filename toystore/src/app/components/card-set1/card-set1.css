@@ -1,0 +1,67 @@
+.card-container {
+    height: auto; /* Adjust height as needed */
+    overflow-x: auto; /* Allow horizontal scrolling */
+    overflow-y: auto; /* Hide vertical overflow */
+    width: 100%;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center items horizontally */
+    padding-bottom: 20px; /* Add space at the bottom for scrolling */
+    
+  }
+  
+  .card-container h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 50px; /* Adjust padding-top for more space above the cards */
+    padding-bottom: 20px;
+    margin: 0; /* Remove default margin */
+    color: #020f33;
+  }
+  
+  .card-set {
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(5, 18rem); /* Create 5 columns of 18rem each */
+    gap: 20px; /* Add space between cards */
+    width: max-content; /* Width adjusts to the content size */
+    justify-content: center; /* Center grid horizontally within the container */
+  }
+  
+  .card {
+    border-radius: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    overflow: hidden;
+    height: auto;
+  }
+  
+  .card-img-top {
+    height: 300px;
+    object-fit: cover;
+    padding: 5px;
+  }
+  
+  .card-text {
+    font-size: 12px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    gap: 10px; /* Equal spacing between buttons */
+    margin: 10px 0; /* Optional: adjust spacing around the buttons */
+  }
+  
+  .add-cart {
+    padding: 10px;
+    background-color: #3b68e6;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 100%;
+    display: flex; /* Enable Flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    color: rgb(253, 253, 255);
+    font-size: small;
+    font-weight: 500;
+  }
+  

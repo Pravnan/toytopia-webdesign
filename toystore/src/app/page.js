@@ -1,14 +1,14 @@
-// src/app/page.js
-'use client'; // Client Component
+'use client'; 
 
 import React from 'react';
-import Carousel from './components/Carousel/Carousel'; // Adjust path as needed
+import Carousel from './components/Carousel/Carousel';
+import CardSet1 from './components/card-set1/card-set1';
 
 const HomePage = () => {
   return (
     <div>
       <Carousel />
-      {/* Other content */}
+      <CardSet1 />
     </div>
   );
 };

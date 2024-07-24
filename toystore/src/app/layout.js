@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import { Inter } from "next/font/google";
 import "./globals.css"; // Global styles
 import Navbar from './components/Navbar/Navbar'; // Updated path to Navbar.jsx
-
+import Head from 'next/head'; // Import Head from next/head
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +14,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <Head>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+          crossOrigin="anonymous"
+        />
+      </Head>
       <body className={inter.className}>
-        <Navbar /> 
+        <Navbar />
         {children}
       </body>
     </html>
