@@ -13,6 +13,8 @@
   .card-container h1 {
     font-weight: 500;
     font-size: 2rem;
+    width: 100%;
+    padding-left: 200px;
     padding-top: 50px; /* Adjust padding-top for more space above the cards */
     padding-bottom: 20px;
     margin: 0; /* Remove default margin */
@@ -44,16 +46,16 @@
     font-size: 12px;
   }
   
-  .buttons {
-    display: flex;
-    justify-content: center; /* Center buttons horizontally */
-    gap: 10px; /* Equal spacing between buttons */
-    margin: 10px 0; /* Optional: adjust spacing around the buttons */
+
+
+
+  .card-price{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px
   }
-  
   .add-cart {
     padding: 10px;
-    background-color: #3b68e6;
+    background-color: #3b8be6;
     text-decoration: none;
     border-radius: 10px;
     width: 100%;
@@ -63,5 +65,39 @@
     color: rgb(253, 253, 255);
     font-size: small;
     font-weight: 500;
+    border: none; /* Ensure no border */
+    cursor: pointer; /* Pointer cursor on hover */
+    position: relative; /* Positioning for pseudo-element */
+    overflow: hidden; /* Hide the pseudo-element overflow */
+    transition: background-color 0.3s; /* Smooth background-color transition */
+  }
+  
+  .add-cart span {
+    position: relative;
+    display: inline-block;
+    transition: padding-right 0.5s; /* Smooth padding transition */
+  }
+  
+  .add-cart span:after {
+    content: '\00bb'; /* Arrow character */
+    position: absolute;
+    opacity: 0;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    transition: opacity 0.5s, right 0.5s; /* Smooth opacity and position transition */
+  }
+  
+  .add-cart:hover {
+    background-color: #2a6ebc; /* Change background color on hover */
+  }
+  
+  .add-cart:hover span {
+    padding-right: 25px; /* Add space for the arrow on hover */
+  }
+  
+  .add-cart:hover span:after {
+    opacity: 1; /* Show the arrow on hover */
+    right: 10px; /* Move the arrow to its visible position */
   }
   

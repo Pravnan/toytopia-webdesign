@@ -1,12 +1,12 @@
 nav {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    height: 60px;
+    height: 80px;
     margin: 0;
     display: flex; /* Enable Flexbox */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between logo and navbar links */
-    padding: 0 20px; /* Optional: Add padding for spacing */
+    padding: 0 200px; /* Optional: Add padding for spacing */
     box-sizing: border-box; /* Include padding in the total width and height */
 
 }
@@ -20,8 +20,10 @@ nav {
 }
 
 .logo img {
-    height: 80px; /* Adjust size of the logo */
+    height: 120px; /* Adjust size of the logo */
     margin-top: 10px;
+    width: auto;
+    margin-bottom: 10px;
 }
 
 .navbar{

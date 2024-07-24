@@ -17,7 +17,7 @@ const Navbar = () => {
         <li><a href="#Product">Products</a></li>
         <li><a href="#sale" className="sale">On Sale</a></li>
         <li><a href="#Contact">Contact Us</a></li>
-        <li><a href="Cart">My Cart <i className="fas fa-shopping-cart"></i></a></li>
+        <li><a href="Cart">My Cart 🛍<i className="fas fa-shopping-cart"></i></a></li>
       </ul>
     </nav>
   );

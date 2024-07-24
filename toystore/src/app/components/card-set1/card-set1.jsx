@@ -36,7 +36,10 @@ const CardSet1 = () => {
               <p className="card-price">{card.price}</p>
               {/* <p className="card-price2">{card.price2}</p> Display the price */}
               {/* <div className="buttons"> */}
-              <a href="#" className="add-cart">Add to cart ➜</a>
+              <div class="buttons">
+                <a href="your-link-here" class="add-cart"><span>Add to Cart</span></a>
+                </div>
+
               {/* <a href="#" className="add-fav">Favorites</a> */}
               {/* </div> */}
             </div>

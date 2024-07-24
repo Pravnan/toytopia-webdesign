@@ -1,0 +1,14 @@
+.carousel-container {
+    height: 700px; /* Adjust this value to your desired height */
+    overflow: hidden; /* Ensure content does not overflow */
+    width: 100%;
+
+  }
+  
+  .carousel-item img {
+    height: 700px;
+    width: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the entire image is visible */
+    
+  }
+  
