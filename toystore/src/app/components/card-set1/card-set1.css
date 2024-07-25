@@ -12,7 +12,7 @@
   
   .card-container h1 {
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     padding-left: 200px;
     padding-top: 50px; /* Adjust padding-top for more space above the cards */
@@ -42,6 +42,12 @@
     padding: 5px;
   }
   
+  .card-title {
+    font-size: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+
   .card-text {
     font-size: 12px;
   }
