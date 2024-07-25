@@ -52,7 +52,7 @@
     {
       "id": 8,
       "title": "L&L SMART HUB",
-      "price": "Rs.1,673.00",
+      "price": "Rs.1,500.00",
       "imageUrl": "https://coolkidz.lk/wp-content/uploads/2022/12/GJW61-1-Copy.jpg"
     },
     
@@ -65,9 +65,23 @@
     
     {
       "id": 10,
-      "title": "LEGO CITY STEMROLLER",
-      "price": "Rs.1,673.00",
-      "imageUrl": "https://coolkidz.lk/wp-content/uploads/2024/07/Construction-Steamroller-2.jpg"
+      "title": "CEMENT MIXER TRUCK",
+      "price": "Rs.8,900.00",
+      "imageUrl": "https://coolkidz.lk/wp-content/uploads/2022/12/LG60325-Copy.jpg"
+    },
+    
+    {
+      "id": 11,
+      "title": "ANIMAL TRAIN",
+      "price": "Rs.13,900.00",
+      "imageUrl": "https://coolkidz.lk/wp-content/uploads/2023/04/LG10955.jpg"
+    },
+    
+    {
+      "id": 12,
+      "title": "BRB BKRY PLYST",
+      "price": "Rs.29,900.00",
+      "imageUrl": "https://coolkidz.lk/wp-content/uploads/2022/12/HGB73-1-Copy.jpg"
     }
   ]
   

@@ -1,3 +1,10 @@
+body {
+    padding-left: 100px; /* Remove default padding */
+    padding-right: 100px;
+  }
+
+
+
 nav {
     background-color: rgb(255, 255, 255);
     width: 100%;
@@ -6,7 +13,6 @@ nav {
     display: flex; /* Enable Flexbox */
     align-items: center; /* Center items vertically */
     justify-content: space-between; /* Space between logo and navbar links */
-    padding: 0 200px; /* Optional: Add padding for spacing */
     box-sizing: border-box; /* Include padding in the total width and height */
 
 }
@@ -44,7 +50,8 @@ nav {
     text-decoration: none;
     margin-right: 30px;
     padding-bottom: 5px;
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 500;
     position: relative; 
 
 }
