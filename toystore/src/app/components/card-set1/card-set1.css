@@ -7,6 +7,20 @@
   flex-direction: column; /* Stack children vertically */
   align-items: center; /* Center items horizontally */
   padding-bottom: 20px; /* Add space at the bottom for scrolling */
+  animation: fadec linear;
+  animation-timeline: scroll();
+}
+
+@keyframes fadec {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  0% {
+    opacity: 0;
+  }
 }
 
 .card-container h1 {
