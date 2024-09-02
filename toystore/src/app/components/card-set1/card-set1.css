@@ -1,3 +1,9 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
 .card-container {
   height: auto; 
   overflow-x: auto; 
@@ -23,21 +29,29 @@
   }
 } */
 
-.card-container h1 {
-  font-weight: 800;
-  font-size: 2rem;
-  width: 100%;
-  text-align: center; 
-  padding-bottom: 50px;
-  margin: 0; 
-  color: #031957;
+.heading-container {
+  display: flex;
+  align-items: center; /* Vertically align the heading and image */
+  margin-bottom: 40px; /* Add some space below the heading for other content */
+  justify-content: flex-start; /* Align content to the left */
+  width: 100%; /* Ensure the container takes up the full width */
 }
+
+.heading-container h1 {
+  font-size: 2rem; /* Adjust the heading size */
+  margin-right: 10px; /* Add space between the heading and the image */
+}
+
+.heading-image {
+  width: 30px; /* Adjust the image size */
+  height: auto;
+} 
 
 
 .card-set {
   height: auto;
   display: grid; 
-  grid-template-columns: repeat(6, 18rem); 
+  grid-template-columns: repeat(5, 20rem); 
   gap: 20px; 
   width: max-content; 
   justify-content: center; 
@@ -59,7 +73,7 @@
 .card-title {
   font-size: 1rem;
   font-weight: 800;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 
@@ -67,11 +81,11 @@
 .card-price{
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .add-cart {
   padding: 10px;
-  background-color: #3b8be6;
+  background-color: #189BFF;
   text-decoration: none;
   border-radius: 10px;
   width: 100%;

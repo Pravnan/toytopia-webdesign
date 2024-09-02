@@ -7,8 +7,8 @@
 }
 
 .forboys {
-    width: auto;
-    height: 385px;
+    width: 600px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,8 +52,8 @@
 
 
 .forgirls {
-    width: auto;
-    height: 385px;
+    width: 600px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;

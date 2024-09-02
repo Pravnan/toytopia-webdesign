@@ -3,10 +3,7 @@ import './card-set1.css';
 
 const CardSet1 = () => {
   const [cards, setCards] = useState([]);
-  const cardWrapperRef = useRef(null);
-  const scrollDirection = useRef('right'); 
-  const widthToScroll = useRef(0);
-  const autoScrollInterval = useRef(null);
+
 
   useEffect(() => {
   
@@ -27,8 +24,11 @@ const CardSet1 = () => {
 
   return (
       <div className="card-container">
-        <h1>Featured Products</h1>
-          <i className="fa-solid fa-arrow-right"></i>
+        <div className="heading-container">
+            <h1>New Arrivals</h1>
+                <img src="resources\icons\arrow.svg" alt="Featured Icon" className="heading-image" />
+            </div>
+          
   
         <div className="card-set">
           {cards.map((card) => (
