@@ -1,11 +1,11 @@
-// src/app/components/Carousel/Carousel.jsx
-'use client'; // Client Component
+
+'use client'; 
 
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min'; // Ensure Bootstrap JS is included
+import 'bootstrap/dist/js/bootstrap.bundle.min'; 
 
-import './Carousel.css'; // Path to your CSS file
+import './Carousel.css'; 
 
 const Carousel = () => {
   return (

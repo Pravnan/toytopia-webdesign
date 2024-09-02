@@ -1,8 +1,8 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { Inter } from "next/font/google";
-import "./globals.css"; // Global styles
-import Navbar from './components/Navbar/Navbar'; // Updated path to Navbar.jsx
-import Head from 'next/head'; // Import Head from next/head
+import "./globals.css"; 
+import Navbar from './components/Navbar/Navbar'; 
+import Head from 'next/head'; 
 
 const inter = Inter({ subsets: ["latin"] });
 

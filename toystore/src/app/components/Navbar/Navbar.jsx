@@ -1,16 +1,16 @@
-'use client'; // Client Component
+'use client'; 
 
-import './Navbar.css'; // Import custom styles for the Navbar
+import './Navbar.css'; 
 
 const Navbar = () => {
   return (
     <nav className="nav-container">
       <a href="Home.html" className="logo">
         <img
-          src="/resources/images/logo.webp" // Correct path
+          src="/resources/images/logo.webp" 
           alt="Brand Logo"
-          width="80" // Adjust width as needed
-          height="auto" // Maintain aspect ratio
+          width="80" 
+          height="auto" 
         />
       </a>
       <ul className="navbar">

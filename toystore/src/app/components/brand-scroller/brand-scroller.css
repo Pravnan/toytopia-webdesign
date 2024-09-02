@@ -19,7 +19,7 @@
     width: 200px;
     height: 100px;
     row-gap: 20px;
-    border-radius: 6px;
+    border-radius: 15px;
     position: absolute;
     left: max(calc(200px * 8), 100%);
     background-size: cover;

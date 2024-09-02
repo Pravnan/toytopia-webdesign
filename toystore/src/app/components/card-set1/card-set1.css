@@ -1,17 +1,17 @@
 .card-container {
-  height: auto; /* Adjust height as needed */
-  overflow-x: auto; /* Allow horizontal scrolling */
-  overflow-y: auto; /* Hide vertical overflow */
+  height: auto; 
+  overflow-x: auto; 
+  overflow-y: auto; 
   width: 100%;
   display: flex;
-  flex-direction: column; /* Stack children vertically */
-  align-items: center; /* Center items horizontally */
-  padding-bottom: 20px; /* Add space at the bottom for scrolling */
-  animation: fadec linear;
-  animation-timeline: scroll();
+  flex-direction: column; 
+  align-items: center; 
+  padding-bottom: 20px; 
+  /* animation: fade linear;
+  animation-timeline: scroll(); */
 }
 
-@keyframes fadec {
+/* @keyframes fade {
   from {
     opacity: 0;
   }
@@ -21,26 +21,26 @@
   0% {
     opacity: 0;
   }
-}
+} */
 
 .card-container h1 {
   font-weight: 800;
   font-size: 2rem;
   width: 100%;
-  text-align: center; /* Center the text inside h1 */
+  text-align: center; 
   padding-bottom: 50px;
-  margin: 0; /* Remove default margin */
+  margin: 0; 
   color: #031957;
 }
 
 
 .card-set {
   height: auto;
-  display: grid; /* Use CSS Grid */
-  grid-template-columns: repeat(6, 18rem); /* Create 5 columns of 18rem each */
-  gap: 20px; /* Add space between cards */
-  width: max-content; /* Width adjusts to the content size */
-  justify-content: center; /* Center grid horizontally within the container */
+  display: grid; 
+  grid-template-columns: repeat(6, 18rem); 
+  gap: 20px; 
+  width: max-content; 
+  justify-content: center; 
 }
 
 .card {
@@ -75,44 +75,44 @@
   text-decoration: none;
   border-radius: 10px;
   width: 100%;
-  display: flex; /* Enable Flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
   color: rgb(253, 253, 255);
   font-size: small;
   font-weight: 500;
-  border: none; /* Ensure no border */
-  cursor: pointer; /* Pointer cursor on hover */
-  position: relative; /* Positioning for pseudo-element */
-  overflow: hidden; /* Hide the pseudo-element overflow */
-  transition: background-color 0.3s; /* Smooth background-color transition */
+  border: none; 
+  cursor: pointer; 
+  position: relative; 
+  overflow: hidden; 
+  transition: background-color 0.3s; 
 }
 
 .add-cart span {
   position: relative;
   display: inline-block;
-  transition: padding-right 0.5s; /* Smooth padding transition */
+  transition: padding-right 0.5s; 
 }
 
 .add-cart span:after {
-  content: '\00bb'; /* Arrow character */
+  content: '\00bb'; 
   position: absolute;
   opacity: 0;
   top: 50%;
   right: -20px;
   transform: translateY(-50%);
-  transition: opacity 0.5s, right 0.5s; /* Smooth opacity and position transition */
+  transition: opacity 0.5s, right 0.5s; 
 }
 
 .add-cart:hover {
-  background-color: #2a6ebc; /* Change background color on hover */
+  background-color: #2a6ebc; 
 }
 
 .add-cart:hover span {
-  padding-right: 25px; /* Add space for the arrow on hover */
+  padding-right: 25px; 
 }
 
 .add-cart:hover span:after {
-  opacity: 1; /* Show the arrow on hover */
-  right: 10px; /* Move the arrow to its visible position */
+  opacity: 1; 
+  right: 10px; 
 }

@@ -1,15 +1,15 @@
 import React, { useRef, useEffect, useState } from 'react';
-import './card-set1.css'; // Import the CSS file
+import './card-set1.css'; 
 
 const CardSet1 = () => {
   const [cards, setCards] = useState([]);
   const cardWrapperRef = useRef(null);
-  const scrollDirection = useRef('right'); // Ref to track scroll direction
+  const scrollDirection = useRef('right'); 
   const widthToScroll = useRef(0);
   const autoScrollInterval = useRef(null);
 
   useEffect(() => {
-    // Function to fetch JSON data and generate cards
+  
     const fetchCards = async () => {
       try {
         const response = await fetch('/json/cards.json');
